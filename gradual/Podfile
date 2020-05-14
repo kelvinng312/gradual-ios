@@ -8,6 +8,10 @@ target 'gradual' do
   # Pods for gradual
   pod 'lottie-ios'
   pod 'Stripe'
+  pod 'Alamofire', '~> 5.1'
+  pod 'AlamofireImage', '~> 4.1'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'SVProgressHUD'
 
   target 'gradualTests' do
     inherit! :search_paths

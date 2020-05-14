@@ -1,20 +1,37 @@
 PODS:
+  - Alamofire (5.1.0)
+  - AlamofireImage (4.1.0):
+    - Alamofire (~> 5.1)
   - lottie-ios (3.1.8)
   - Stripe (19.2.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.1)
+  - AlamofireImage (~> 4.1)
   - lottie-ios
   - Stripe
+  - SVProgressHUD
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - AlamofireImage
     - lottie-ios
     - Stripe
+    - SVProgressHUD
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
   lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
   Stripe: d481c2dab9a892fd923f097f854661217f70dc7f
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: abc60286ebfcecedbe7c451b5bcc61ec316ba971
+PODFILE CHECKSUM: 739e9fa31996282749f0f3265cc81e8bc68f2666
 
 COCOAPODS: 1.9.1

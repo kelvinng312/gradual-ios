@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "DoneesViewController.collectionView(_:cellForItemAt:):DoneesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "donees[index].avatar">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainViewController.keyboardWillShow(notification:):MainViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.bounds">
+            </PersistentString>
+            <PersistentString
+               value = "wgtCardInput.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
