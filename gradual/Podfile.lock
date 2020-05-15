@@ -6,6 +6,7 @@ PODS:
   - Stripe (19.2.0)
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (4.3.0)
+  - Toaster (2.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.1)
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - Stripe
   - SVProgressHUD
   - SwiftyJSON (~> 4.0)
+  - Toaster
 
 SPEC REPOS:
   trunk:
@@ -23,6 +25,7 @@ SPEC REPOS:
     - Stripe
     - SVProgressHUD
     - SwiftyJSON
+    - Toaster
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
@@ -31,7 +34,8 @@ SPEC CHECKSUMS:
   Stripe: d481c2dab9a892fd923f097f854661217f70dc7f
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  Toaster: c1a81b376edcc2470157b4d1ee1e9341d3b96455
 
-PODFILE CHECKSUM: 739e9fa31996282749f0f3265cc81e8bc68f2666
+PODFILE CHECKSUM: b66654658cd03e05a6634e793f09e9c9ef5fd09b
 
 COCOAPODS: 1.9.1

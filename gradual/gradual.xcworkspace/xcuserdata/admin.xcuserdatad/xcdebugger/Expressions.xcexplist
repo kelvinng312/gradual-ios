@@ -3,6 +3,17 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "MainViewController.keyboardWillShow(notification:):MainViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "wgtCardInput.frame">
+            </PersistentString>
+            <PersistentString
+               value = "self.view.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "DoneesViewController.collectionView(_:cellForItemAt:):DoneesViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -11,15 +22,21 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "MainViewController.keyboardWillShow(notification:):MainViewController.swift">
+         contextName = "MainViewController.viewDidLoad():MainViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "self.view.bounds">
+               value = "viewDonateAnimation.frame.origin.y">
             </PersistentString>
             <PersistentString
-               value = "wgtCardInput.frame">
+               value = "viewDonateAnimation.frame.height">
+            </PersistentString>
+            <PersistentString
+               value = "self.viewRoot.bounds.height">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainViewController.viewWillAppear(_:):MainViewController.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

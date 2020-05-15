@@ -28,6 +28,7 @@
 		843E957F2464AE64004C1076 /* gradualTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E957E2464AE64004C1076 /* gradualTests.swift */; };
 		843E958A2464AE64004C1076 /* gradualUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E95892464AE64004C1076 /* gradualUITests.swift */; };
 		843E959B2464BF44004C1076 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E959A2464BF44004C1076 /* DesignableUITextField.swift */; };
+		8487E62C246EA5B100354FB8 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487E62B246EA5B000354FB8 /* UIViewController+Toast.swift */; };
 		84CFBFF6246891B400A65347 /* SignUpApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CFBFF5246891B400A65347 /* SignUpApiCall.swift */; };
 		84CFBFF8246891DA00A65347 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CFBFF7246891DA00A65347 /* SignUpRequest.swift */; };
 		84CFBFFA246891EF00A65347 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CFBFF9246891EF00A65347 /* SignUpResponse.swift */; };
@@ -101,6 +102,7 @@
 		843E95892464AE64004C1076 /* gradualUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradualUITests.swift; sourceTree = "<group>"; };
 		843E958B2464AE64004C1076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843E959A2464BF44004C1076 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
+		8487E62B246EA5B000354FB8 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		84CFBFF5246891B400A65347 /* SignUpApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpApiCall.swift; sourceTree = "<group>"; };
 		84CFBFF7246891DA00A65347 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 		84CFBFF9246891EF00A65347 /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 			children = (
 				843E959A2464BF44004C1076 /* DesignableUITextField.swift */,
 				84345BA5246C83A7003F0039 /* UIViewController+Keyboard.swift */,
+				8487E62B246EA5B000354FB8 /* UIViewController+Toast.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -629,6 +632,7 @@
 				843A758F2467613200C6542A /* LoginResponse.swift in Sources */,
 				843A758B2467613200C6542A /* ApiCall+Interceptor.swift in Sources */,
 				84CFC00D2468AC3900A65347 /* DoneeCollectionViewCell.swift in Sources */,
+				8487E62C246EA5B100354FB8 /* UIViewController+Toast.swift in Sources */,
 				84D7445A246D57AE00E7443D /* PayConfirmRequest.swift in Sources */,
 				843A758D2467613200C6542A /* LoginApiCall.swift in Sources */,
 				84CFC0012468A21000A65347 /* DoneesRequest.swift in Sources */,

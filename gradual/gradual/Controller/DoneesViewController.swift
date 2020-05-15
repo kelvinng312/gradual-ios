@@ -19,7 +19,7 @@ class DoneesViewController: UIViewController {
         
         let parameters = DoneesRequest()
         let doneesApiCall = DoneesApiCall(parameters: parameters, success: { response in
-            self.donees = response.donees
+            self.donees = response.donees.filter({ $0.id != Preference.userID })
             self.doneesCollectionView.reloadData()
         }, failure: {
             
@@ -78,7 +78,7 @@ extension DoneesViewController: UICollectionViewDataSource, UICollectionViewDele
         let padding: CGFloat = 40
         let collectionViewSize = collectionView.frame.size.width - padding
 
-        return CGSize(width: collectionViewSize / 2, height: collectionViewSize / 2)
+        return CGSize(width: collectionViewSize / 2, height: collectionViewSize / 2 + 40)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

@@ -11,7 +11,7 @@ import Foundation
 struct PayAgainRequest: Encodable {
     var userID: Int
     var customerID: String
-    var receivedUserID: String
+    var receivedUserID: Int
     
     enum CodingKeys: String, CodingKey {
         case userID = "user_id"
