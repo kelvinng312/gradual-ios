@@ -39,41 +39,9 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pushViewWhenKeyboardAppear()
-        dismissKeyboardWhenTouch()
-        
-        imgSender.image = imgDonee
-        lblSender.text = donee?.name
-        txtCardInput.translatesAutoresizingMaskIntoConstraints = false
-        if let customerID = Preference.customerID, !customerID.isEmpty {
-            txtCardInput.isHidden = true
-        } else {
-            txtCardInput.isHidden = false
-        }
-        viewDonateAnimation.currentProgress = 1
-        
-        guard let button_sound_url = Bundle.main.url(forResource: "button_sound", withExtension: "mp3") else { return }
-        guard let success_sound_url = Bundle.main.url(forResource: "success_sound", withExtension: "mp3") else { return }
-
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
-
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
-            playerDonateSound = try AVAudioPlayer(contentsOf: button_sound_url, fileTypeHint: AVFileType.mp3.rawValue)
-            playerSuccessSound = try AVAudioPlayer(contentsOf: success_sound_url, fileTypeHint: AVFileType.mp3.rawValue)
-            
-            playerDonateSound?.delegate = self
-            playerSuccessSound?.delegate = self
-        } catch let error {
-            print(error.localizedDescription)
-        }
-        
-        guard let stripeKey = Preference.stripeKey else {
-            //TODO: go to login page or something
-            return
-        }
-        Stripe.setDefaultPublishableKey(stripeKey)
+        initializeView()
+        initializeAnimationAndSound()
+        initializeStripe()
     }
     
     @IBAction func btnDonateTouch(_ sender: Any) {
@@ -106,6 +74,48 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController {
+    func initializeView() {
+        pushViewWhenKeyboardAppear()
+        dismissKeyboardWhenTouch()
+        
+        imgSender.image = imgDonee
+        lblSender.text = donee?.name
+        txtCardInput.translatesAutoresizingMaskIntoConstraints = false
+        if let customerID = Preference.customerID, !customerID.isEmpty {
+            txtCardInput.isHidden = true
+        } else {
+            txtCardInput.isHidden = false
+        }
+        viewDonateAnimation.currentProgress = 1
+    }
+    
+    func initializeAnimationAndSound() {
+        guard let button_sound_url = Bundle.main.url(forResource: "button_sound", withExtension: "mp3") else { return }
+        guard let success_sound_url = Bundle.main.url(forResource: "success_sound", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            playerDonateSound = try AVAudioPlayer(contentsOf: button_sound_url, fileTypeHint: AVFileType.mp3.rawValue)
+            playerSuccessSound = try AVAudioPlayer(contentsOf: success_sound_url, fileTypeHint: AVFileType.mp3.rawValue)
+            
+            playerDonateSound?.delegate = self
+            playerSuccessSound?.delegate = self
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func initializeStripe() {
+        guard let stripeKey = Preference.stripeKey else {
+            //TODO: go to login page or something
+            return
+        }
+        Stripe.setDefaultPublishableKey(stripeKey)
+    }
+    
     func startDonate() {
         viewDonateAnimation.currentProgress = 1
         viewDonateAnimation.isHidden = true
