@@ -20,6 +20,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.dismissKeyboardWhenTouch()
     }
     
     @IBAction func btnSignUpTouch(_ sender: Any) {

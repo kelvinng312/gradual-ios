@@ -40,7 +40,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         initializeView()
-        initializeAnimationAndSound()
+        initializeSound()
         initializeStripe()
     }
     
@@ -89,7 +89,7 @@ extension MainViewController {
         viewDonateAnimation.currentProgress = 1
     }
     
-    func initializeAnimationAndSound() {
+    func initializeSound() {
         guard let button_sound_url = Bundle.main.url(forResource: "button_sound", withExtension: "mp3") else { return }
         guard let success_sound_url = Bundle.main.url(forResource: "success_sound", withExtension: "mp3") else { return }
 

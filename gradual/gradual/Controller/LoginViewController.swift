@@ -10,7 +10,7 @@ import UIKit
 import SVProgressHUD
 
 class LoginViewController: UIViewController {
-
+    
     @IBOutlet weak var txtEmail: DesignableUITextField!
     @IBOutlet weak var txtPassword: DesignableUITextField!
     
@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
         txtEmail.text = "test1@gmail.com"
         txtPassword.text = "11111111"
         // Do any additional setup after loading the view.
+        self.dismissKeyboardWhenTouch()
     }
     
     @IBAction func btnLoginTouch(_ sender: Any) {
